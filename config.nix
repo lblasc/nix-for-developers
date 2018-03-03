@@ -10,6 +10,7 @@
       cmakeFlags = [
         "-DCPP-NETLIB_BUILD_TESTS=OFF"
       ];
+      buildInputs = [ pkgs.cmake pkgs.boost162 pkgs.openssl ];
     });
   };
 }
