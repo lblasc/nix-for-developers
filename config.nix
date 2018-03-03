@@ -7,6 +7,9 @@
         rev = "73d4024";
         sha256 = "0xkila1f66dk58dmrpf4qcfgmk48a9wr5syhm2vwfim8qpibfmvj";
       };
+      cmakeFlags = [
+        "-DCPP-NETLIB_BUILD_TESTS=OFF"
+      ];
     });
   };
 }
