@@ -1,4 +1,4 @@
-with (import <nixpkgs> {});
+with (import <nixpkgs> { config = import ./config.nix; });
 
 stdenv.mkDerivation rec {
   name = "app";
